@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Train Time</title>
+</head>
+<body>
+        <header>
+                <div class="jumbotron jumbotron-fluid">
+                    <div class="container">
+                        <h1 class="display-4">Train Time
+                </div>
+            </header>
+
+    
+<!-- Form for submit-->
+<div class="container-fluid text-center">
+        <div class="container">
+<form class="needs-validation" novalidate>
+        <div class="form-row">
+          <div class="col-md-4 mb-3">
+            <label for="validationTooltip01">Train name</label>
+            <input type="text" class="form-control" id="validationTooltip01" placeholder="Train name" value="" required>
+            <div class="valid-tooltip">
+              Train Name
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <label for="validationTooltip02">Destination</label>
+            <input type="text" class="form-control" id="validationTooltip02" placeholder="Destination" value="" required>
+            <div class="valid-tooltip">
+              Destionation
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <label for="validationTooltipUsername">First Train Time (HH:mm - military time)</label>
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="validationTooltipUsernamePrepend"></span>
+              </div>
+              <input type="text" class="form-control" id="validationTooltipUsername" placeholder="Train Time" aria-describedby="validationTooltipUsernamePrepend" required>
+              <div class="invalid-tooltip">
+                Please enter Train Time.
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+                <label for="validationTooltipUsername">Frequency (min)</label>
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text" id="validationTooltipUsernamePrepend"></span>
+                  </div>
+                  <input type="text" class="form-control" id="validationTooltipUsername" placeholder="Frequency" aria-describedby="validationTooltipUsernamePrepend" required>
+                  <div class="invalid-tooltip">
+                    Please choose a unique Frequency.
+                  </div>
+                </div>
+              </div>
+        </div>
+
+        <button class="btn btn-primary" type="submit">Submit</button>
+      </form>
+        </div>
+</div>
+</body>
+</html>
