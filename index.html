@@ -19,57 +19,68 @@
                 <h1 class="display-4">Train Time
             </div>
     </header>
-    
-
-    <!-- Form for submit-->
     <div class="container-fluid">
         <div class="container">
-            <form class="trainEntry" novalidate>
-                <div class="form-row">
-                    <div class="col-12">
-                        <label for="validationTooltip01">Train name</label>
-                        <input type="text" class="form-control" id="validationTooltip01"
-                            placeholder=" Please enter train name" value="" required>
-                    </div>
-                </div>
-        </div>
-        <div class="container">
-            <div class="form-row">
-                <div class="col-12">
-                    <label for="validationTooltip02">Destination</label>
-                    <input type="text" class="form-control" id="validationTooltip02"
-                        placeholder="Please enter destination" value="" required>
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="form-row">
-                <div class="col-12">
-                    <label for="validationTooltip03">First Train Time (HH:mm - military time)</label>
-                    <input type="text" class="form-control" id="validationTooltip03"
-                        placeholder="Please enter first train time" value="" required>
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="form-row">
-                <div class="col-12">
-                    <label for="validationTooltip04">Frequency</label>
-                    <input type="text" class="form-control" id="validationTooltip04"
-                        placeholder="Please enter frequency" value="" required>
-                </div>
-            </div>
-        </div>
-        <div class="container">
-        <div class="form-row">
-        <button class="btn btn-primary" type="submit">Submit</button>
-        </div>
-        </div>
-        
+            <div class="card text-black mb-12 border-primary">
+                <div class="card-header">Current Train Schedule</div>
+                <div class="card-body">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">Train Name</th>
+                                <th scope="col">Destination</th>
+                                <th scope="col">Frequency</th>
+                                <th scope="col">Next Arrival</th>
+                                <th scope="col">Minutes Away</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Mark</td>
+                                <td>Otto</td>
+                                <td>@mdo</td>
+                                <td>something</td>
+                            </tr>
 
-        </form>
-    </div>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div><br><br>
 
+    <div class="container-fluid">
+        <div class="container">
+            <div class="card text-black mb-12 border-primary">
+                <h5 class="card-header">Add Train</h5>
+                <div class="card-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="trainName-input">Train Name</label>
+                            <input type="text" class="form-control trainName" id="trainName-input">
+                        </div>
+                        <div class="form-group">
+                            <label for="destination-input">Destination</label>
+                            <input type="text" class="form-control destination" id="destination-input">
+                        </div>
+                        <div class="form-group">
+                            <label for="frequency-input">First Train Time (HH:mm -military time)</label>
+                            <input type="text" class="form-control trainTime" id="frequency-input">
+                        </div>
+                        <div class="form-group">
+                            <label for="trainTime-input">Frequency (min)</label>
+                            <input type="text" class="form-control frequency" id="trainTime-input">
+                        </div>
+
+                        <button class="btn btn-primary" id="submit-bid" type="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+
+
+        </div>
+        <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
+        <script src="assets/javascript/app.js"> </script>
 </body>
 
 </html>
