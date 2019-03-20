@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Train Time</title>
 </head>
@@ -34,16 +35,7 @@
                                 <th scope="col">Minutes Away</th>
                             </tr>
                         </thead>
-                        <tbody>
-                            <tr>
-                                <td id="trainName"></td>
-                                <td id="destination"></td>
-                                <td id="frequency"></td>
-                                <td id="trainTime"></td>
-                                <td id="minutes"></td>
-                            </tr>
-
-                        </tbody>
+                        <tbody> </tbody>
                     </table>
                 </div>
             </div>
@@ -65,12 +57,12 @@
                             <input type="text" class="form-control destination" id="destination-input">
                         </div>
                         <div class="form-group">
-                            <label for="frequency-input">First Train Time (HH:mm -military time)</label>
-                            <input type="text" class="form-control trainTime" id="frequency-input">
+                            <label for="trainTime-input">First Train Time (HH:mm -military time)</label>
+                            <input type="text" class="form-control trainTime" id="trainTime-input">
                         </div>
                         <div class="form-group">
-                            <label for="trainTime-input">Frequency (min)</label>
-                            <input type="text" class="form-control frequency" id="trainTime-input">
+                            <label for="frequency-input">Frequency (min)</label>
+                            <input type="text" class="form-control frequency" id="frequency-input">
                         </div>
 
                         <button class="btn btn-primary" id="submit-bid" type="submit">Submit</button>
